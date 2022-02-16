@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face{
+    font-family: 'AUBREY';
+    src: url("../fonts/AUBREY.TTF") format('truetype')
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('http://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-size: 15px;
+    min-width: 1350px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #444939;
+}
+
+
+/*font*/
+
+.font11{
+    font-size: 11px;
+}
+.font18{
+    font-size: 18px;
+}
+
+.font22{
+    font-size: 22px;
+}
+.font26{
+    font-size: 26px;
+    line-height: 23px;
+}
+
+.font26_map{
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.font28{
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.font36{
+    font-size: 37px;
+}
+
+.font42{
+    font-size: 42px;
+}
+
+
+.aubrey{
+    font-family: 'AUBREY';
+}
+
+.s_core3{
+    font-family: 'S-CoreDream-4Regular';
+}
+
+.noto600{
+    font-weight: 600;
+}
+.e_green{
+    color: #838c6e;
+}
+
+
+/*float*/
+
+.float_l{
+    float: left;
+}
+
+.float_r{
+    float: right;
+}
+
+
+.clear{
+    clear: both;
+}
+
+/*header*/
+
+#nav{
+    /*position: absolute;*/
+    position: fixed;
+    display: block;
+    transition: top 0.3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(255, 255, 255,0.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.downdown {
+    position:fixed;
+    animation: down 0.3s ease;
+}
+@keyframes down {
+    0%{
+      transform: translateY(-50px)
+    }
+    100%{
+      transform: translateY(0px)
+    }  
+}
+
+.nav_inner{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.nav_inner ul {
+    float: right;
+}
+
+.logo{
+    float: left;
+    padding-top: 41px;
+}
+
+.nav_inner ul li{
+    float: left;
+    font-weight: bold;
+    color: #444939;
+    padding: 50px 20px;
+}
+
+.nav_inner ul li:nth-child(5){
+    padding-top: 40px;
+    padding-right: 0;
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #a9d167;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+}
+
+
+/*
+.now{
+    vertical-align: center;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    background: #a9d167;
+    border-bottom: #7dc244 3px solid;
+}*/
+
+
+
+/*sub1_banner*/
+
+#sub1_banner{
+    background: url(../images/img_banner.png) no-repeat center center;
+    height: 625px;
+}
+
+/*.sub1_banner img{
+    width: 100%;
+    height: 625px;
+    overflow: hidden;
+    margin: 0 auto;
+    position:relative;
+}
+*/
+
+.bn_inner{
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 290px;
+}
+
+
+/*our story*/
+
+#ourstory{
+    width: 1320px;
+    margin: 180px auto;
+}
+
+#story_box1{
+    margin: 130px 0;
+}
+
+.story_t{
+    text-align: center;
+    background: url(../images/valueline.png) no-repeat center 45%;
+}
+
+
+.text_h{
+    line-height: 44px;
+}
+
+span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.our_t{
+    margin-top: -5px;
+    padding-bottom: 10px;
+}
+
+#story_box1 .story_img{
+    padding-left: 25px;
+
+}
+
+#story_box1 .story_text{
+    box-sizing: border-box;
+    padding-right: 95px;
+    padding-top: 212px;
+}
+
+.story_text2{
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-top: 164px;
+}
+
+/*화살표 밖으로 + 이미지로 화살표 변환*/
+#arrow_image{
+    width:607px; 
+    position:relative;
+    /*화살표 포지션의 기준을 swiper밖에다가 다시 잡아 줍니다.*/}
+
+.card4_img{
+    width:607px; 
+}
+
+.swiper-scrollbar {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    z-index: 50;
+    height: 5px;
+	margin-left:-3px;/*원하는 스크롤바 길이의 절반만큼 마이너스로 지정*/
+    width: 607px;/*원하는 스크롤바 길이*/
+	background:#494452;/*스크롤바 바깥부분 색상. rgba로도 설정가능.*/
+}
+
+.swiper-pagination-bullet{
+    background: #7dc244;
+}
+
+
+
+/*value*/
+
+.value_box{
+    width: 347px;
+    height: 302px;
+    text-align: center;
+    float: left;
+    background: #fafdf5;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+    margin-right: 15px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    transition: all 0.1s;
+}
+
+
+#value .value_box:hover{
+    transform: rotate(5deg);
+}
+
+#value .value_box:nth-child(2):hover{
+    transform: rotate(-5deg);
+}
+
+#value .value_box:nth-child(3):hover{
+    transform: translateY(-20px);
+}
+
+
+
+.value_inner{
+    width: 1150px;
+    height: 527px;
+    margin: 150px auto;
+}
+
+.value_box > p{
+    font-family: "이롭게 바탕체";
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 25px; 
+}
+
+.value_box .line24{
+    line-height: 24px;
+}
+
+.value_box > img{
+    padding-top: 15px;
+}
+
+
+/*footer*/
+
+footer{
+    background: #f6f8f4;
+}
+
+.footer_inner{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.font30{
+    font-size: 30px;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+footer ul li{
+    float: left;
+    padding-right: 10px;
+}
+
+.f_first{
+    height: 40px;
+    padding: 20px 0;
+}
+
+.f_second{
+    height: 25px;
+    padding-bottom: 20px;
+}
+
+.f_second ul{
+    padding-right: 10px;
+}
+
+.f_icon a{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.f_icon a{
+    padding-left: 15px;
+}
+
+footer p{
+    padding-bottom: 10px;
+}
+
+
+
+/*nav .on*/
+
+#nav.on{
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.on>.nav_inner ul li{
+    padding: 20px 20px;
+    transition: all 0.3s;
+}
+
+.on>.nav_inner ul li:nth-child(5){
+    padding-top: 13px;
+}
+
+.on>.nav_inner ul {
+    height: 70px;
+    transition: all 0.3s;
+}
+
+.on>.nav_inner .logo{
+    padding-top: 12px;
+}
